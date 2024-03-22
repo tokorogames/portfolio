@@ -17,7 +17,7 @@ import Mail from './Components/Mail';
 import { CgArrowLongUp } from 'react-icons/cg';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleTheme = () => {
     setIsDarkMode(prevMode => !prevMode);

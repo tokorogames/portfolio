@@ -4,22 +4,18 @@
 
 .header {
 	position: fixed;
-	left: -0px;
+	left: 0px;
 	top: 0;
-	padding-top: 1.3rem;
 	padding-left: var(--padding-width);
 	padding-right: var(--padding-width);
 	width: calc(100vw - calc(var(--padding-width) * 2));
 	z-index: 101;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	background-color: #232135;
+	justify-content: center;
 }
 
 .header.light {
-	background: var(--gradient);
-	color: #f5f5f5;
 	transition: all 1s;
   }
 
@@ -30,15 +26,22 @@
 
 .nav ul {
 	display: flex;
+	padding-inline-start: 0px;
 }
 
 .nav ul li {
 	list-style: none;
 	margin-left: 4rem;
-	border-bottom: solid #232135;
 	border-image-slice: 1;
 	border-width: 2px;
-	font-size: calc(1vw + 0.5rem);
+	font-size: calc(0.75vw);
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #576D8F;
+}
+
+.nav ul li:first-child {
+		margin-left: 0;
 }
 
 .nav ul li:hover,

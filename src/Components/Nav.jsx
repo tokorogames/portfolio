@@ -16,13 +16,22 @@ const Nav = ({ isDarkMode, handleToggle }) => {
 
   const nav =
     <ul style={{ pointerEvents: 'auto' }}>
-      <li><Link onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
-        Projects
+      <li><Link onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+        Intro
+      </Link></li>
+      <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
+        Portfolio
+      </Link></li>
+      <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
+        Skills
+      </Link></li>
+      <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
+        Portfolio
       </Link></li>
       <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
         About
       </Link></li>
-      <li><Link onClick={handleClick} activeClass="active" to="mail" spy={true} smooth={true} offset={0} duration={500}>
+      <li><Link onClick={handleClick} activeClass="active" to="mail" spy={true} smooth={true} offset={-80} duration={500}>
         Contact
       </Link></li>
     </ul>
@@ -30,21 +39,12 @@ const Nav = ({ isDarkMode, handleToggle }) => {
   return (
     <div className='nav'>
       <div className={`header ${!isDarkMode ?'light' : ''}`}>
-        <h1>
-          <Link activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={500}>
-            Favour
-          </Link>
-        </h1>
-        
         <div className="menu-and-theme">
           <div onClick={handleClick} className="menu">
             <GiHamburgerMenu />
           </div>
           <div className='large'>
             {nav}
-          </div>
-          <div className={`theme-switch ${!isDarkMode ?'light' : ''}`} onClick={handleToggle} >
-            {isDarkMode ? <FaMoon /> : <FaSun />}
           </div>
         </div>
       </div>
