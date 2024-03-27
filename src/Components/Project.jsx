@@ -4,7 +4,7 @@ import '../styles/Project.css'
 const Project = ({ name, desc, techs, liveLink, githubLink, isOpenSource }) => {
   return (
     <div className="project">
-      <h2>{name}</h2>
+      <h3>{name}</h3>
       <p>{desc}</p>
       <div className="tech-stack">
         {techs.map(item => <div key={item}>{item}</div>)}

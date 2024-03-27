@@ -16,17 +16,14 @@ const Nav = ({ isDarkMode, handleToggle }) => {
 
   const nav =
     <ul style={{ pointerEvents: 'auto' }}>
-      <li><Link onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+      <li><Link onClick={handleClick} activeClass="active" to="intro" spy={true} smooth={true} offset={-80} duration={500}>
         Intro
       </Link></li>
-      <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
+      <li><Link onClick={handleClick} activeClass="active" to="portfolio" spy={true} smooth={true} offset={-80} duration={500}>
         Portfolio
       </Link></li>
-      <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
+      <li><Link onClick={handleClick} activeClass="active" to="skills" spy={true} smooth={true} offset={-80} duration={500}>
         Skills
-      </Link></li>
-      <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
-        Portfolio
       </Link></li>
       <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
         About

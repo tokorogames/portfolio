@@ -6,7 +6,7 @@ import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiFigma, SiMongodb
 
 const Skills = () => {
   return (
-    <div className='skills'>
+    <div className='skills' id='skills'>
       <h2>My Skills</h2>
       <div className="skill">
         <div className="js">

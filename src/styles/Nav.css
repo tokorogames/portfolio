@@ -11,8 +11,10 @@
 	width: calc(100vw - calc(var(--padding-width) * 2));
 	z-index: 101;
 	display: flex;
+	background-color: rgba(255, 255, 255, 0.97);
 	align-items: center;
 	justify-content: center;
+	border-bottom: double 2px #538DFF;
 }
 
 .header.light {
@@ -37,7 +39,6 @@
 	font-size: calc(0.75vw);
 	font-weight: 600;
 	text-transform: uppercase;
-	color: #576D8F;
 }
 
 .nav ul li:first-child {
@@ -48,6 +49,15 @@
 .nav ul li:active {
 	cursor: pointer;
 	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
+	color: #5d6dfd;
+}
+
+.nav ul li .active {
+	color: #5d6dfd;
+}
+
+.large {
+	
 }
 
 .menu-and-theme{

@@ -1,17 +1,38 @@
 .App > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-left: 10rem;
 	padding-right: 10rem;
+	border-top: double 2px #538DFF;
 }
 
 .App.light {
 	color: #343E4E;
-	background-color: #fff;
 	transition: all 0.5s;
 }
 
 .App.light .light {
 	box-shadow: none;
 	transition: all 1s;
+}
+
+.App.light .light h2 {
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8vw;
+	font-weight: 600;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: -20px;
+	margin-bottom: 30px;
+	padding: 10px 15px;
+	width: 120px;
+	border: 2px solid transparent;
 }
 
 .dark {
@@ -21,11 +42,6 @@
 	padding-bottom: 100px;
 	color: #fff;
 	transition: all 0.5s;
-}
-
-h2 {
-	font-size: calc(1vw + 1rem);
-	font-weight: 500;
 }
 
 .dark:last-of-type {

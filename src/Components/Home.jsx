@@ -39,8 +39,7 @@ const Home = () => {
 
 
     return (
-    <div className='home' id='home'>
-        
+    <div className='home' id='intro'>
       <div className="home-wrapper">
           <div className="home-picture">
               <img src={miguel} className="border" alt="miguel" />
@@ -58,19 +57,19 @@ const Home = () => {
                     cursorClassName: "typewriter-cursor"
                 }}
                 onInit={(typewriter) => {
-                    typewriter.typeString("I'm a <span class='gradientText'>Game Developer</span>.")
+                    typewriter.typeString("And I'm a <span class='gradientText'>Game Developer</span>.")
                         .pauseFor(2000)
                         .deleteAll(25)
                         .pauseFor(600)
-                        .typeString("I'm a <span class='gradientText'>UI Artist</span>.")
+                        .typeString("And I'm a <span class='gradientText'>UI Artist</span>.")
                         .pauseFor(2000)
                         .deleteAll(25)
                         .pauseFor(600)
-                        .typeString("I'm a <span class='gradientText'>Shader Programmer</span>.")
+                        .typeString("And I'm a <span class='gradientText'>Shader Programmer</span>.")
                         .pauseFor(2000)
                         .deleteAll(25)
                         .pauseFor(600)
-                        .typeString("I'm a <span class='gradientText'>Game Artist</span>.")
+                        .typeString("And I'm a <span class='gradientText'>Game Artist</span>.")
                         .pauseFor(2000)
                         .deleteAll(25)
                         .start()
@@ -84,7 +83,7 @@ const Home = () => {
             Portfolio
           </Link>
 
-          <div onClick={handleDownload} className='btn2'>CV</div>
+          <div onClick={handleDownload} className='btn2'>Download CV</div>
         </div>
       </div>
 

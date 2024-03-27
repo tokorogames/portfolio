@@ -5,40 +5,43 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projectsInfo = [
     {
-      name: "Project 1",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
+      name: "Bang On Time",
+      desc: "Place your cards in the correct chronological order, in this fast-paced, competitive mobile game.",
       liveLink: "website url",
       githubLink: "https://github.com/",
       techs: ["HTML", "CSS", "TypeScript"],
       isOpenSource: true,
     },
     {
-      name: "Project 2",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
+      name: "iRoll",
+      desc: "Get the ball in the goal by avoiding obstacles.\n" +
+          "Find the quickest route and beat your own record.",
       liveLink: "website url",
       githubLink: "https://github.com/",
       techs: ["React", "Node", "MongoDB", "Socket.io", "Redux"],
       isOpenSource: true,
     },
     {
-      name: "Project 2",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
+      name: "LAB",
+      desc: "Guide the ball into the goal by placing cards which spawn objects.\n" +
+          "Win, collect and craft cards!",
       liveLink: "website url",
       githubLink: "https://github.com/",
       techs: ["React", "Node", "MongoDB", "Socket.io", "Redux"],
       isOpenSource: true,
     },
     {
-      name: "Project 2",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
+      name: "Into Orbit",
+      desc: "Carefully launch your rocket ship into the orbit of a nearby planet.\n" +
+          "How far can you go?",
       liveLink: "website url",
       githubLink: "https://github.com/",
       techs: ["React", "Node", "MongoDB", "Socket.io", "Redux"],
       isOpenSource: true,
     },
     {
-      name: "Project 2",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
+      name: "Quizkampen",
+      desc: "",
       liveLink: "website url",
       githubLink: "https://github.com/",
       techs: ["React", "Node", "MongoDB", "Socket.io", "Redux"],
@@ -46,8 +49,8 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="Projects" id="projects">
-      <h2>My Projects</h2>
+    <div className="Projects" id="portfolio">
+      <h2>Portfolio</h2>
       <div>
         {projectsInfo.map((project, index) => (
           <Project key={index} {...project} />

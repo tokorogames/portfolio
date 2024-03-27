@@ -29,26 +29,27 @@ function App() {
         <Nav isDarkMode={isDarkMode} handleToggle={toggleTheme} />
         <Home />
       </div>
-      <div className={`dark ${!isDarkMode ?'light' : ''}`}>
+      <div className={`light`}>
         <Fade fraction={.2} triggerOnce>
           <Projects />
         </Fade>
-        <Fade fraction={.2} triggerOnce>
-          <Socials />
-        </Fade>
+      </div>
+        <div className={`light`}>
+          <Fade fraction={.2} triggerOnce>
+              <Skills />
+          </Fade>
+        </div>
+        <div className={`light`}>
         <Fade fraction={.2} triggerOnce>
           <About />
         </Fade>
-        <Fade fraction={.2} triggerOnce>
-          <Skills />
-        </Fade>
       </div>
-      <div>
+      <div className={`light`}>
         <Fade fraction={.2} triggerOnce>
           <Mail />
         </Fade>
       </div>
-      <div className={`dark ${!isDarkMode ?'light' : ''}`}>
+      <div className={`light`}>
         <Fade fraction={.2} triggerOnce>
           <p>Thank you for scrolling💘</p>
           <div className='arrow' onClick={() => animateScroll.scrollToTop()}>
