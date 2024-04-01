@@ -80,9 +80,8 @@ const Home = () => {
         
         <div className="btns">
           <Link className='btn1' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
-            Portfolio
+            See Portfolio
           </Link>
-
           <div onClick={handleDownload} className='btn2'>Download CV</div>
         </div>
       </div>
