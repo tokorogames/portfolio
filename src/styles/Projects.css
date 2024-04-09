@@ -1,12 +1,12 @@
 .Projects {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 3rem;
 }
 
 .App.light .light h2 {
 	background: linear-gradient(white, white) padding-box,
 	linear-gradient(to right, #9757FF, #8960FF) border-box;
+	color: #9757FF;
 }
 
 h3 {
@@ -19,8 +19,6 @@ h3 {
 	cursor: pointer;
 	background-color: white;
 	margin: 0 auto;
-	margin-top: -20px;
-	margin-bottom: 30px;
 	padding: 10px 15px;
 }
 
@@ -28,9 +26,7 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: center;
 	justify-content: center;
-	margin-bottom: 2rem;
 }
 
 .App > div {

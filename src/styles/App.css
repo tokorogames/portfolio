@@ -1,15 +1,11 @@
 .App > div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin: 10rem 0;
 	padding-left: 10rem;
 	padding-right: 10rem;
-	border-top: double 2px #538DFF;
-	margin-top: 75px;
 }
 
 .App > div:first-of-type {
-	margin-top: 0;
+	border-top: none;
 }
 
 .App.light {
@@ -29,13 +25,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 0.8vw;
+	font-size: 1vw;
 	font-weight: 600;
 	border-radius: 30px;
 	cursor: pointer;
 	background-color: white;
 	margin: 0 auto;
-	margin-top: -20px;
+	margin-top: -25px;
 	margin-bottom: 30px;
 	padding: 10px 15px;
 	width: 120px;

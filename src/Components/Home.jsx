@@ -1,18 +1,19 @@
-import React, { useState, useRef } from 'react'
+import React, {useState, useRef} from 'react'
+import {motion} from "framer-motion";
 
 import '../styles/Home.css'
 
-import TypeWriterEffect from 'react-typewriter-effect';
 import Typewriter from 'typewriter-effect';
-import { animateScroll } from 'react-scroll';
-import { saveAs } from "file-saver";
-import { Link } from 'react-scroll';
+import {animateScroll} from 'react-scroll';
+import {saveAs} from "file-saver";
 import miguel from '../images/miguel.png';
+import arrow from '../images/arrow.svg';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     const [number, setNumber] = useState(0);
     const arrayOfWords = ['Tap again', 'Helllo', 'You found this', 'I added this...', 'because it seemed cool', `so here's something`, 'did you know that...', `You can't breathe and talk.`, 'the earth is 71% water.', `It snows in the Sahara Desert
-`, ]
+`,]
     const textContent = useRef();
     const handleDownload = () => {
         saveAs(
@@ -39,54 +40,71 @@ const Home = () => {
 
 
     return (
-    <div className='home' id='intro'>
-      <div className="home-wrapper">
-          <div className="home-picture">
-              <img src={miguel} className="border" alt="miguel" />
-          </div>
-        <h1>
+        <div className='home'>
+            <div className="home-wrapper">
+                <div className="home-picture">
+                    <img src={miguel} className="border" alt="miguel"/>
+                </div>
+                <h1>
           <span className="title">
             Hi! I'm Miguel.
           </span>
-            <Typewriter
-                options={{
-                    autoStart: true,
-                    loop: true,
-                    delay: 35,
-                    wrapperClassName: "typewriter",
-                    cursorClassName: "typewriter-cursor"
-                }}
-                onInit={(typewriter) => {
-                    typewriter.typeString("And I'm a <span class='gradientText'>Game Developer</span>.")
-                        .pauseFor(2000)
-                        .deleteAll(25)
-                        .pauseFor(600)
-                        .typeString("And I'm a <span class='gradientText'>UI Artist</span>.")
-                        .pauseFor(2000)
-                        .deleteAll(25)
-                        .pauseFor(600)
-                        .typeString("And I'm a <span class='gradientText'>Shader Programmer</span>.")
-                        .pauseFor(2000)
-                        .deleteAll(25)
-                        .pauseFor(600)
-                        .typeString("And I'm a <span class='gradientText'>Game Artist</span>.")
-                        .pauseFor(2000)
-                        .deleteAll(25)
-                        .start()
-                    ;
-                }}
-            />
-        </h1>
-        
-        <div className="btns">
-          <Link className='btn1' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
-            See Portfolio
-          </Link>
-          <div onClick={handleDownload} className='btn2'>Download CV</div>
-        </div>
-      </div>
+                    <Typewriter
+                        options={{
+                            autoStart: true,
+                            loop: true,
+                            delay: 35,
+                            wrapperClassName: "typewriter",
+                            cursorClassName: "typewriter-cursor"
+                        }}
+                        onInit={(typewriter) => {
+                            typewriter
+                                .typeString("And I'm a <span class='gradientText'>Game Developer</span>.")
+                                .pauseFor(2000)
+                                .deleteAll(25)
+                                .pauseFor(600)
+                                .typeString("And I'm a <span class='gradientText'>UI Artist</span>.")
+                                .pauseFor(2000)
+                                .deleteAll(25)
+                                .pauseFor(600)
+                                .typeString("And I'm a <span class='gradientText'>Shader Programmer</span>.")
+                                .pauseFor(2000)
+                                .deleteAll(25)
+                                .pauseFor(600)
+                                .typeString("And I'm a <span class='gradientText'>Game Artist</span>.")
+                                .pauseFor(2000)
+                                .deleteAll(25)
+                                .start()
+                            ;
+                        }}
+                    />
+                </h1>
+                <div className="btns">
+                    <Link className='btn1' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
+                        See Portfolio
+                    </Link>
+                    {/*<div onClick={handleDownload} className='btn2'>Download CV</div>*/}
+                </div>
+                {/*<div className="cta-btn-wrapper">*/}
+                {/*    <h2>View Portfolio</h2>*/}
+                {/*    <motion.div*/}
+                {/*        className="cta-btn"*/}
+                {/*        animate={{*/}
+                {/*            y: ["0px", "-50px"],*/}
+                {/*        }}*/}
+                {/*        transition={{*/}
+                {/*            duration: 1,*/}
+                {/*            ease: "easeInOut",*/}
+                {/*            times: [0, 1],*/}
+                {/*            repeat: Infinity,*/}
+                {/*        }}*/}
+                {/*    >*/}
+                {/*        <img src={arrow} alt="arrow"/>*/}
+                {/*    </motion.div>*/}
+                {/*</div>*/}
+            </div>
 
-    </div >
+        </div>
     )
 }
 

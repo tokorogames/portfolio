@@ -82,7 +82,7 @@ const Mail = () => {
   }, [toSend.subject])
 
   return (
-    <div className='mail' id='mail'>
+    <div className='mail'>
       <h2>Get In Touch</h2>
       <div>
         <div className='entry'>

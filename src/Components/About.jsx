@@ -14,7 +14,7 @@ const About = () => {
     return age_now;
   }
   return (
-    <div className='about' id="about">
+    <div className='about'>
       <h2>Get To Know Me</h2>
       <div className="words">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Tortor condimentum lacinia quis vel. Netus et malesuada fames ac turpis egestas. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Vestibulum lectus mauris ultrices eros in cursus turpis. Habitant morbi tristique senectus et netus. Enim praesent elementum facilisis leo vel fringilla est. Morbi tempus iaculis urna id volutpat lacus laoreet. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Laoreet sit amet cursus sit amet dictum sit. Odio morbi quis commodo odio aenean sed. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Arcu felis bibendum ut tristique et egestas. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est.

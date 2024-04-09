@@ -49,7 +49,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="Projects" id="portfolio">
+    <div className="Projects">
       <h2>Portfolio</h2>
       <div>
         {projectsInfo.map((project, index) => (

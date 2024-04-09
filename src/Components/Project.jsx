@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/Project.css'
 import iRoll from '../images/iRoll.mp4';
-import outline from '../images/project-thumb-mask-outline.svg';
 
 const handleMouseEnter = e => {
     e.currentTarget.play();
