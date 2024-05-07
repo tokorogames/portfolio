@@ -4,9 +4,9 @@
 }
 
 .App.light .light h2 {
-	background: linear-gradient(white, white) padding-box,
-	linear-gradient(to right, #9757FF, #8960FF) border-box;
-	color: #9757FF;
+	background: linear-gradient(to bottom right, #9757FF, #713FFF);
+	background-clip: text;
+	color: transparent;
 }
 
 h3 {
@@ -28,8 +28,3 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
-.App > div {
-	border-top: double 2px #8960FF;
-}
-

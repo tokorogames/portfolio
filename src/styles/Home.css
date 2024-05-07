@@ -32,39 +32,34 @@
 	align-items: center;
 }
 
-.home-picture img {
-	width: 320px;
-	border-radius: 50%;
-}
-
 .border{
 	border-radius: 50%;
-	border: 12px solid #fff;
+	border: 8px solid #fff;
 	-webkit-animation: rainbow 10s infinite;
 	-z-animation: rainbow 10s infinite;
 	-o-animation: rainbow 10s infinite;
 	animation: rainbow 10s infinite;}
 
 @keyframes rainbow {
-	0%{box-shadow: 0 0 0 10px #4690FF}
-	50%{box-shadow: 0 0 0 10px #675AFF}
-	100%{box-shadow: 0 0 0 10px #4690FF}
+	0%{box-shadow: 0 0 0 8px #4690FF}
+	50%{box-shadow: 0 0 0 8px #675AFF}
+	100%{box-shadow: 0 0 0 8px #4690FF}
 }
 
 @-webkit-keyframes rainbow {
-	0%{box-shadow: 0 0 0 10px #46D3FF}
-	50%{box-shadow: 0 0 0 10px #675AFF}
-	100%{box-shadow: 0 0 0 10px #46D3FF}
+	0%{box-shadow: 0 0 0 8px #46D3FF}
+	50%{box-shadow: 0 0 0 8px #675AFF}
+	100%{box-shadow: 0 0 0 8px #46D3FF}
 }
 @-moz-keyframes rainbow {
-	0%{box-shadow: 0 0 0 10px #46D3FF}
-	50%{box-shadow: 0 0 0 10px #675AFF}
-	100%{box-shadow: 0 0 0 10px #46D3FF}
+	0%{box-shadow: 0 0 0 8px #46D3FF}
+	50%{box-shadow: 0 0 0 8px #675AFF}
+	100%{box-shadow: 0 0 0 8px #46D3FF}
 }
 @-o-keyframes rainbow {
-	0%{box-shadow: 0 0 0 10px #46D3FF}
-	50%{box-shadow: 0 0 0 10px #675AFF}
-	100%{box-shadow: 0 0 0 10px #46D3FF}
+	0%{box-shadow: 0 0 0 8px #46D3FF}
+	50%{box-shadow: 0 0 0 8px #675AFF}
+	100%{box-shadow: 0 0 0 8px #46D3FF}
 }
 
 .home-wrapper h1 {
@@ -104,44 +99,29 @@
 }
 
 .btns {
-	margin-top: 0.5rem;
 	display: flex;
 	justify-content: center;
 }
 
-.btn1,
-.btn2 {
+.btn1 {
 	border-radius: 30px;
 	cursor: pointer;
-	font-weight: 600;
+	font-weight: 500;
+	font-size: calc(1vw + 0.3rem);
 	text-decoration: none;
+	text-transform: uppercase;
 	display: grid;
 	place-items: center;
 	min-height: 35px;
 	background-origin: border-box;
 	background-clip: content-box, border-box;
-	margin: 0 15px;
+	margin: 20px 15px;
+	width: 200px;
 }
 
-.btn1 {
-	width: 150px;
-	border: double 2px #5d6dfd;
+.btn-arrow {
+	padding-top: 15px;
 }
-
-.btn2 {
-	width: 150px;
-	border: double 2px #343E4E;
-}
-
-/*.btn2 {*/
-/*	width: 150px;*/
-/*	border: double 2px transparent;*/
-/*	background-image: linear-gradient(#fff, #fff),*/
-/*		radial-gradient(circle at top left, #1da1f2, #6253e8);*/
-/*	background-origin: border-box;*/
-/*	background-clip: content-box, border-box;*/
-/*	color: #343E4E;*/
-/*}*/
 
 @media only screen and (max-width: 1040px) and (min-width: 899px) {
 	.home {

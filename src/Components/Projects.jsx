@@ -50,7 +50,7 @@ const Projects = () => {
   ];
   return (
     <div className="Projects">
-      <h2>Portfolio</h2>
+      <h2>This is my portfolio.</h2>
       <div>
         {projectsInfo.map((project, index) => (
           <Project key={index} {...project} />

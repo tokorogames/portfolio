@@ -8,7 +8,7 @@ import {animateScroll} from 'react-scroll';
 import {saveAs} from "file-saver";
 import miguel from '../images/miguel.png';
 import arrow from '../images/arrow.svg';
-import { Link } from 'react-scroll';
+import {Link} from 'react-scroll';
 
 const Home = () => {
     const [number, setNumber] = useState(0);
@@ -46,9 +46,9 @@ const Home = () => {
                     <img src={miguel} className="border" alt="miguel"/>
                 </div>
                 <h1>
-          <span className="title">
-            Hi! I'm Miguel.
-          </span>
+                    <span className="title">
+                        Hi! I'm Miguel.
+                    </span>
                     <Typewriter
                         options={{
                             autoStart: true,
@@ -80,28 +80,12 @@ const Home = () => {
                     />
                 </h1>
                 <div className="btns">
-                    <Link className='btn1' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
-                        See Portfolio
+                    <Link className='btn1' activeClass="active" to="projects" spy={true} smooth={true} offset={0}
+                          duration={500}>
+                        View Portfolio
+                        <img src={arrow} className='btn-arrow' alt="arrow"/>
                     </Link>
-                    {/*<div onClick={handleDownload} className='btn2'>Download CV</div>*/}
                 </div>
-                {/*<div className="cta-btn-wrapper">*/}
-                {/*    <h2>View Portfolio</h2>*/}
-                {/*    <motion.div*/}
-                {/*        className="cta-btn"*/}
-                {/*        animate={{*/}
-                {/*            y: ["0px", "-50px"],*/}
-                {/*        }}*/}
-                {/*        transition={{*/}
-                {/*            duration: 1,*/}
-                {/*            ease: "easeInOut",*/}
-                {/*            times: [0, 1],*/}
-                {/*            repeat: Infinity,*/}
-                {/*        }}*/}
-                {/*    >*/}
-                {/*        <img src={arrow} alt="arrow"/>*/}
-                {/*    </motion.div>*/}
-                {/*</div>*/}
             </div>
 
         </div>
