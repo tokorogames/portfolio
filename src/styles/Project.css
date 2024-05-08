@@ -5,12 +5,13 @@
 }
 
 .project {
-	background: rgb(34, 33, 52);
 	min-width: var(--project-width);
 	max-width: var(--project-width);
 	border-radius: var(--border-radius);
 	margin: 2rem 5rem;
 	position: relative;
+	background-color: #fff;
+	transition: all 0.5s;
 }
 
 .project h3 {
@@ -75,12 +76,7 @@
 	
 }
 
-.light .project {
-	background-color: #fff;
-	transition: all 0.5s;
-}
-
-.light .company {
+.company {
 	background-color: #000;
 	color: #fff;
 }
@@ -95,9 +91,6 @@
 .project .tech-stack {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.light .tech-stack {
 	color: #fff;
 	transition: all 0.5s;
 }
@@ -114,28 +107,6 @@
 	place-items: center;
 	background: rgb(25, 23, 32);
 	border-radius: var(--border-radius);
-}
-
-.project .btns {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-top: 1rem;
-}
-
-.project .btns a {
-	min-height: calc(var(--project-width) / 8.3);
-	min-width: calc(var(--project-width) / 2.5);
-	max-height: calc(var(--project-width) / 8.3);
-	max-width: calc(var(--project-width) / 2.5);
-	background: rgb(245, 242, 245);
-	color: rgb(34, 33, 52);
-	text-decoration: none;
-	font-weight: 600;
-	border-radius: var(--border-radius);
-	display: grid;
-	place-items: center;
-	margin-bottom: 1rem;
 }
 
 .preview h3 {

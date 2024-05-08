@@ -144,7 +144,7 @@ const Mail = () => {
           </div>
           <p style={{ color: 'red !important', display: 'none' }} ref={error}>Something is missing</p>
           <p style={{ color: 'red !important' }} ref={formResMsg}></p>
-          <div className='btn' onClick={handleClick}>Send Message</div>
+          <div className='mail-btn' onClick={handleClick}>Send Message</div>
         </div>
       </div>
     </div>

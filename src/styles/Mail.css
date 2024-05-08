@@ -50,13 +50,13 @@
 	resize: none;
 }
 
-.entry > div:not(.btn, .options) {
+.entry > div:not(.mail-btn, .options) {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 }
 
-.entry > div:not(.btn) label {
+.entry > div:not(.mail-btn) label {
 	margin-bottom: 5px;
 }
 
@@ -133,7 +133,7 @@
 	transform: scale(1);
 }
 
-.btn {
+.mail-btn {
 	cursor: pointer;
 	background-color: #6253e8;
 	width: calc(calc(var(--input-width) / 2) + 20px);
@@ -144,7 +144,7 @@
 	margin-top: 10px;
 }
 
-.light .btn{
+.light .mail-btn{
 	color: #fff;
 }
 

@@ -3,7 +3,7 @@
 	flex-direction: column;
 }
 
-.App.light .light h2 {
+.Projects h2 {
 	background: linear-gradient(to bottom right, #9757FF, #713FFF);
 	background-clip: text;
 	color: transparent;

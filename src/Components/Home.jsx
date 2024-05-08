@@ -1,44 +1,11 @@
-import React, {useState, useRef} from 'react'
-import {motion} from "framer-motion";
-
 import '../styles/Home.css'
 
 import Typewriter from 'typewriter-effect';
-import {animateScroll} from 'react-scroll';
-import {saveAs} from "file-saver";
+import {Link} from 'react-scroll';
 import miguel from '../images/miguel.png';
 import arrow from '../images/arrow.svg';
-import {Link} from 'react-scroll';
 
 const Home = () => {
-    const [number, setNumber] = useState(0);
-    const arrayOfWords = ['Tap again', 'Helllo', 'You found this', 'I added this...', 'because it seemed cool', `so here's something`, 'did you know that...', `You can't breathe and talk.`, 'the earth is 71% water.', `It snows in the Sahara Desert
-`,]
-    const textContent = useRef();
-    const handleDownload = () => {
-        saveAs(
-            "google drive url",
-            "Resume.pdf"
-        )
-    }
-
-    const handleChange = () => {
-        textContent.current.style.display = 'inline-block';
-        textContent.current.innerText = arrayOfWords[number]
-        if ((arrayOfWords.length - 1) !== number) {
-            setNumber(number + 1)
-        }
-        if ((arrayOfWords.length - 1) === number) {
-            // something will be here soon
-            setTimeout(() => {
-                textContent.current.style.display = 'none'
-                animateScroll.scrollTo(350)
-                setNumber(1)
-            }, 1000);
-        }
-    }
-
-
     return (
         <div className='home'>
             <div className="home-wrapper">
@@ -79,15 +46,14 @@ const Home = () => {
                         }}
                     />
                 </h1>
-                <div className="btns">
-                    <Link className='btn1' activeClass="active" to="projects" spy={true} smooth={true} offset={0}
+                <div className="btn-wrapper">
+                    <Link className='btn' activeClass="active" to="projects" spy={true} smooth={true} offset={0}
                           duration={500}>
                         View Portfolio
                         <img src={arrow} className='btn-arrow' alt="arrow"/>
                     </Link>
                 </div>
             </div>
-
         </div>
     )
 }

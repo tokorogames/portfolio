@@ -8,7 +8,7 @@ const handleMouseEnter = e => {
 const handleMouseOut = e => {
     e.currentTarget.pause();
 }
-const Project = ({ name, desc, techs, liveLink, githubLink, company }) => {
+const Project = ({ name, desc, techs, company }) => {
     return (
     <div className="project">
     <div className="preview">
@@ -24,10 +24,6 @@ const Project = ({ name, desc, techs, liveLink, githubLink, company }) => {
       <p>{desc}</p>
       <div className="tech-stack">
         {techs.map(item => <div key={item}>{item}</div>)}
-      </div>
-      <div className="btns">
-        <a href={liveLink} target="_blank" rel="noreferrer">Live</a>
-        <a href={githubLink} target="_blank" rel="noreferrer">Github</a>
       </div>
     </div>
   )
