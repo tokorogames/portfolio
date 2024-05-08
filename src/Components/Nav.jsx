@@ -2,12 +2,11 @@ import React, {useState} from 'react'
 
 import {Link} from 'react-scroll';
 import {GiHamburgerMenu} from 'react-icons/gi'
-import {FaSun, FaMoon} from 'react-icons/fa'
 
 import '../styles/Nav.css'
 
 
-const Nav = ({isDarkMode, handleToggle}) => {
+const Nav = ({handleToggle}) => {
     const [isOpen, setIsOpen] = useState(true)
 
     const handleClick = () => {
@@ -36,9 +35,9 @@ const Nav = ({isDarkMode, handleToggle}) => {
 
     return (
         <div className='nav'>
-            <div className={`header ${!isDarkMode ? 'light' : ''}`}>
-                <div className="menu-and-theme">
-                    <div onClick={handleClick} className="menu">
+            <div className={`header light`}>
+                <div className='menu'>
+                    <div onClick={handleClick} className='menu-small'>
                         <GiHamburgerMenu/>
                     </div>
                     <div className='large'>

@@ -64,7 +64,7 @@
 	
 }
 
-.menu-and-theme{
+.menu{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -85,8 +85,7 @@
 	transition: all 1s;
 }
 
-
-.menu {
+.menu-small {
 	display: none;
 }
 
@@ -99,7 +98,7 @@
 		display: none;
 	}
 
-	.menu {
+	.menu-small {
 		display: block;
 		z-index: 100;
 		cursor: pointer;
