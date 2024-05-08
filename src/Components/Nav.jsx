@@ -6,7 +6,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import '../styles/Nav.css'
 
 
-const Nav = ({handleToggle}) => {
+const Nav = () => {
     const [isOpen, setIsOpen] = useState(true)
 
     const handleClick = () => {
@@ -36,8 +36,8 @@ const Nav = ({handleToggle}) => {
     return (
         <div className='nav'>
             <div className={`header light`}>
-                <div className='menu'>
-                    <div onClick={handleClick} className='menu-small'>
+                <div className='menu-and-theme'>
+                    <div onClick={handleClick} className='menu'>
                         <GiHamburgerMenu/>
                     </div>
                     <div className='large'>

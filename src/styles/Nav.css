@@ -60,11 +60,7 @@
 	padding: 1px 15px 2px 15px;
 }
 
-.large {
-	
-}
-
-.menu{
+.menu-and-theme{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -85,7 +81,7 @@
 	transition: all 1s;
 }
 
-.menu-small {
+.menu {
 	display: none;
 }
 
@@ -98,7 +94,7 @@
 		display: none;
 	}
 
-	.menu-small {
+	.menu {
 		display: block;
 		z-index: 100;
 		cursor: pointer;
