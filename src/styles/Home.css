@@ -72,26 +72,6 @@
 	color: transparent;
 }
 
-.btn-wrapper {
-	display: flex;
-	justify-content: center;
-}
-
-.btn {
-	cursor: pointer;
-	display: grid;
-	place-items: center;
-	font-weight: 500;
-	font-size: calc(1vw + 0.3rem);
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 200px;
-}
-
-.btn-arrow {
-	padding-top: 15px;
-}
-
 @media only screen and (max-width: 1040px) and (min-width: 899px) {
 	.home {
 		padding-top: 8rem;

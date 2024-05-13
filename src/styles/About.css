@@ -1,5 +1,13 @@
 .about {
 	padding-bottom: 50px;
+	width: var(--container-width);
+	margin: 0 auto;
+}
+
+.about h2 {
+	background: var(--orange-gradient);
+	background-clip: text;
+	color: transparent;
 }
 
 .about .words p {

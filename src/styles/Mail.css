@@ -1,10 +1,17 @@
 :root {
-	--input-width: 400px;
+	--input-width: 800px;
 }
 
-.mail {
-	padding-top: 80px;
-	padding-bottom: 80px;
+.mail h2 {
+	background: var(--green-gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+.entry {
+	text-align: left;
+	margin: 0 auto;
+	width: var(--input-width);
 }
 
 .entry input,
@@ -18,8 +25,8 @@
 	color: #f5f5f5;
 }
 
-.light .entry input,
-.light .entry textarea{
+.entry input,
+.entry textarea{
   background-color: #f5f5f5;
   color: #000;
   transition: all 0.5s;
@@ -33,10 +40,10 @@
 	background-color: #181721;
 }
 
-.light .entry input:active,
-.light .entry textarea:active,
-.light .entry input:focus,
-.light .entry textarea:focus {
+.entry input:active,
+.entry textarea:active,
+.entry input:focus,
+.entry textarea:focus {
 	outline: none;
 	background-color: #f5f5f5;
 }
@@ -144,7 +151,7 @@
 	margin-top: 10px;
 }
 
-.light .mail-btn{
+.mail-btn{
 	color: #fff;
 }
 

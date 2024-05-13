@@ -16,7 +16,7 @@ import {CgArrowLongUp} from 'react-icons/cg';
 
 function App() {
     return (
-        <div className={`App light`}>
+        <div className='App'>
             <Element name="intro" className="element">
                 <div>
                     <Nav />
@@ -24,34 +24,34 @@ function App() {
                 </div>
             </Element>
             <Element name="portfolio" className="element">
-                <div className={`light`}>
+                <div>
                     <Fade fraction={.2} triggerOnce>
                         <Projects/>
                     </Fade>
                 </div>
             </Element>
             <Element name="skills" className="element">
-                <div className={`light`}>
+                <div>
                     <Fade fraction={.2} triggerOnce>
                         <Skills/>
                     </Fade>
                 </div>
             </Element>
             <Element name="about" className="element">
-                <div className={`light`}>
+                <div>
                     <Fade fraction={.2} triggerOnce>
                         <About/>
                     </Fade>
                 </div>
             </Element>
             <Element name="mail" className="element">
-                <div className={`light`}>
+                <div>
                     <Fade fraction={.2} triggerOnce>
                         <Mail/>
                     </Fade>
                 </div>
             </Element>
-            <div className={`light`}>
+            <div>
                 <Fade fraction={.2} triggerOnce>
                     <p>Thank you for scrolling!</p>
                     <div className='arrow' onClick={() => animateScroll.scrollToTop()}>

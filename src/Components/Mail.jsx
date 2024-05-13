@@ -83,7 +83,7 @@ const Mail = () => {
 
   return (
     <div className='mail'>
-      <h2>Get In Touch</h2>
+      <h2>Send me a message.</h2>
       <div>
         <div className='entry'>
           <div>

@@ -4,22 +4,9 @@
 }
 
 .Projects h2 {
-	background: linear-gradient(to bottom right, #9757FF, #713FFF);
+	background: var(--purple-gradient);
 	background-clip: text;
 	color: transparent;
-}
-
-h3 {
-	display: flex;
-	font-weight: 600;
-	align-items: center;
-	justify-content: center;
-	font-size: 0.8vw;
-	border-radius: 40px;
-	cursor: pointer;
-	background-color: white;
-	margin: 0 auto;
-	padding: 10px 15px;
 }
 
 .Projects > div {

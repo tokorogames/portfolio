@@ -1,26 +1,39 @@
+:root {
+	--purple-gradient: linear-gradient(to bottom right, #9757FF, #713FFF);
+	--pink-gradient: linear-gradient(to bottom right, #FF218C, #FF3062);
+	--orange-gradient: linear-gradient(to bottom right, #FFA621, #ff6030);
+	--green-gradient: linear-gradient(to bottom right, #a9ff0e, #2fcd00);
+}
+
 .App > div {
 	margin: 10rem 0;
-	padding-left: 10rem;
-	padding-right: 10rem;
 }
 
 .App > div:first-of-type {
 	border-top: none;
 }
 
-.App.light {
+h3 {
+	display: flex;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8vw;
+	border-radius: 40px;
+	cursor: pointer;
+	background-color: white;
+	margin: 0 auto;
+	padding: 10px 15px;
+}
+
+.App {
 	color: #343E4E;
 	transition: all 0.5s;
 	text-align: center;
-
-}
-
-.App.light .light {
 	box-shadow: none;
-	transition: all 1s;
 }
 
-.App.light .light h2 {
+.App h2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,23 +42,47 @@
 	margin: 4rem auto;
 }
 
-.dark {
-	box-shadow: 30px 20px 5px #232135;
-	background-color: #181721;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: #fff;
-	transition: all 0.5s;
+.btn-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 180px;
+	
 }
 
-.dark:last-of-type {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-size: calc(1vw + 1.1rem);
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.btn {
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+	font-weight: 500;
+	font-size: calc(1vw + 0.8rem);
+	text-decoration: none;
+	animation: float 1s ease-in-out infinite;
+	-webkit-animation: float 1s ease-in-out infinite;
+	-z-animation: float 1s ease-in-out infinite;
+	-o-animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+	0%,100%{transform: translateY(0);}
+	50%{transform: translateY(-10px);}
+}
+
+@-webkit-keyframes float {
+	0%,100%{transform: translateY(0);}
+	50%{transform: translateY(-10px);}
+}
+@-moz-keyframes float {
+	0%,100%{transform: translateY(0);}
+	50%{transform: translateY(-10px);}
+}
+@-o-keyframes float {
+	0%,100%{transform: translateY(0);}
+	50%{transform: translateY(-10px);}
+}
+
+.btn-arrow {
+	padding-top: 15px;
+	width: 15%;
 }
 
 .arrow {
@@ -63,7 +100,7 @@
 	color: #6253e8;
 }
 
-.light .arrow{
+.arrow {
 	background-color: #f5f5f5;
 	transition: all 0.5s;
 }
@@ -72,11 +109,5 @@
 	.App > div {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
-	}
-}
-
-@media only screen and (max-width: 418px) {
-	.dark:last-of-type {
-		font-size: calc(1vw + 0.8rem);
 	}
 }

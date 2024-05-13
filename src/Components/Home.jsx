@@ -46,13 +46,13 @@ const Home = () => {
                         }}
                     />
                 </h1>
-                <div className="btn-wrapper">
-                    <Link className='btn' activeClass="active" to="projects" spy={true} smooth={true} offset={0}
-                          duration={500}>
-                        View Portfolio
-                        <img src={arrow} className='btn-arrow' alt="arrow"/>
-                    </Link>
-                </div>
+            </div>
+            <div className="btn-wrapper">
+                <Link className='btn' activeClass="active" to="portfolio" spy={true} smooth={true} offset={0}
+                      duration={500}>
+                    View Portfolio
+                    <img src={arrow} className='btn-arrow' alt="arrow"/>
+                </Link>
             </div>
         </div>
     )
