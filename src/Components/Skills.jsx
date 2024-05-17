@@ -13,14 +13,15 @@ import {
     SiFigma,
     SiAbletonlive,
     SiBlender,
-    SiRider
+    SiRider,
+    SiPhoton
 } from 'react-icons/si'
 import arrow from "../images/arrow.svg";
 
 const Skills = () => {
     return (
         <div className="skills">
-            <h2>This is the software I use.</h2>
+            <h2>This is my skillset.</h2>
             <div className="skill">
                 <div>
                     <SiUnity/>
@@ -61,6 +62,10 @@ const Skills = () => {
                 <div>
                     <SiAbletonlive/>
                     <p>Ableton Live</p>
+                </div>
+                <div>
+                    <SiPhoton/>
+                    <p>Photon</p>
                 </div>
             </div>
             <div className="btn-wrapper">

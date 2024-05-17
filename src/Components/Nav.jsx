@@ -13,7 +13,7 @@ const Nav = () => {
                 Portfolio
             </Link></li>
             <li><Link activeClass="active" to="skills" spy={true} smooth={true} duration={500}>
-                Software
+                Skillset
             </Link></li>
             <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
                 About
