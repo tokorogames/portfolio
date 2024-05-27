@@ -87,7 +87,7 @@ const Mail = () => {
 
     return (
         <div className='mail'>
-            <h2>Let's have a chat!</h2>
+            <h2>Get in touch @</h2>
             <div className="contact-info">
                 <div>
                     <img src={WhatsAppIcon}/>
@@ -129,17 +129,21 @@ const Mail = () => {
                     <div className='mail-btn' onClick={handleClick}>Send message</div>
                 </div>
             </div>
-            <h2><span>Thank you for reading.</span></h2>
-            <div className="btn-wrapper">
-                <Link className='btn' activeClass="active" to="intro" spy={true} smooth={true} offset={0}
-                      duration={1000}>
-                    <span>Go back to the top</span>
-                    <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M13.8855 5.61051L11.9999 7.94385L6.94271 3.85703L1.88553 7.94385L-6.94142e-05 5.61051L6.94271 -0.000109326L13.8855 5.61051Z"/>
-                    </svg>
-                </Link>
+            <div className="outro">
+                <h2>This is the end.</h2>
+                <h3>(But maybe the beginning of something else.)</h3>
+                <div className="btn-wrapper">
+                    <Link className='btn' activeClass="active" to="intro" spy={true} smooth={true} offset={0}
+                          duration={1000}>
+                        <span>Take another look</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.8855 5.61051L11.9999 7.94385L6.94271 3.85703L1.88553 7.94385L-6.94142e-05 5.61051L6.94271 -0.000109326L13.8855 5.61051Z"/>
+                        </svg>
+                    </Link>
+                </div>
             </div>
+            
         </div>
     )
 }

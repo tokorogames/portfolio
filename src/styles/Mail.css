@@ -5,13 +5,41 @@
 
 .mail {
 	padding-top: 5rem;
-	padding-bottom: 10rem;
 }
 
 .mail h2 {
 	background: var(--purple-gradient);
 	background-clip: text;
 	color: transparent;
+}
+
+.mail h2 span {
+	margin-top: 30px;
+}
+
+.outro {
+	background: rgb(218,236,245);
+	background: linear-gradient(0deg, rgba(218,236,245,1) 0%, rgba(218,236,245,0.5) 10%, rgba(218,236,245,0) 40%);
+	margin-top: 320px;
+	padding-bottom: 80px;
+}
+
+.outro h2 {
+	background: var(--gradientBlue);
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 0;
+}
+
+.outro h3 {
+	color: #3b5794;
+	font-size: 1.1vw;
+	font-weight: 400;
+	margin: 0;
+}
+
+.outro .btn-wrapper {
+	margin-top: 60px;
 }
 
 .contact-info {
