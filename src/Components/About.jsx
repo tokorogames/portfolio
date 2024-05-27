@@ -2,35 +2,87 @@ import React from 'react'
 
 import '../styles/About.css'
 import {Link} from 'react-scroll';
-import arrow from "../images/arrow.svg";
+import picture from "../images/picture.png";
+import icon from "../images/quote-icon.png";
 
 const About = () => {
-  const calculate_age = () => {
-    var today = new Date();
-    var birthDate = new Date("1994-10-16");
-    var age_now = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age_now--;
-    }
-    return age_now;
-  }
-  return (
-    <div className='about'>
-      <h2>Some facts about me.</h2>
-      <div className="words">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Tortor condimentum lacinia quis vel. Netus et malesuada fames ac turpis egestas. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Vestibulum lectus mauris ultrices eros in cursus turpis. Habitant morbi tristique senectus et netus. Enim praesent elementum facilisis leo vel fringilla est. Morbi tempus iaculis urna id volutpat lacus laoreet. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Laoreet sit amet cursus sit amet dictum sit. Odio morbi quis commodo odio aenean sed. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Arcu felis bibendum ut tristique et egestas. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est.
-        Interdum posuere lorem ipsum dolor sit amet consectetur. Purus semper eget duis at tellus at urna condimentum mattis. In nisl nisi scelerisque eu ultrices vitae. Cursus in hac habitasse platea dictumst. Volutpat diam ut venenatis tellus in metus vulputate eu. Blandit massa enim nec dui nunc mattis enim ut. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Porttitor lacus luctus accumsan tortor posuere ac ut. Vitae et leo duis ut diam quam. Lobortis mattis aliquam faucibus purus. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Leo integer malesuada nunc vel. Purus sit amet volutpat consequat mauris nunc. Hendrerit dolor magna eget est lorem ipsum. Sed risus pretium quam vulputate. Adipiscing at in tellus integer.
-        Interdum consectetur libero id faucibus nisl. At augue eget arcu dictum. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Sit amet tellus cras adipiscing enim eu turpis. Eros in cursus turpis massa tincidunt dui ut. Adipiscing commodo elit at imperdiet dui accumsan. Risus sed vulputate odio ut enim blandit. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Hendrerit gravida rutrum quisque non. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi.
-      </div>
-      <div className="btn-wrapper">
-        <Link className='btn' activeClass="active" to="mail" spy={true} smooth={true} offset={0}
-              duration={500}>
-          View Contact
-          <img src={arrow} className='btn-arrow' alt="arrow"/>
-        </Link>
-      </div>
-    </div>
-  )
+    return (
+        <div className='about'>
+            <div className="about-wrapper">
+                <h2>A few things about me.</h2>
+                <div className="profile">
+                    <div className="picture">
+                        <div>
+                            <img src={picture}/>
+                        </div>
+                        <div className="info">
+                            <div className="info-outline">
+                                <span>Portugal, 2023</span>
+                            </div>    
+                        </div>
+                        <br/>
+                        Amina, Zoe and Miguel.<br/>
+                        Three months before Emma was born.
+                    </div>
+                    <div className="quotes">
+                        <div className="quote">
+                            <h3>Current Employment</h3>
+                            <span>
+                                <img src={icon}/>
+                                I’m a self-taught Unity Developer and run my own sole trader business, Tokoro.
+                            </span>
+                        </div>
+                        <div className="quote">
+                            <h3>Area of Expertise</h3>
+                            <span>
+                                <img src={icon}/>
+                                I’ve worked in many areas of game production, but my strongest skill is designing and implementing user interfaces (along with animations, shaders and sound effects).
+                            </span>
+                        </div>
+                        <div className="quote">
+                            <h3>Career Interests</h3>
+                            <span>
+                                <img src={icon}/>
+                                I’m currently very invested in shaders. I love working with Unity’s Shader Graph.
+                            </span>
+                        </div>
+                        <div className="quote">
+                            <h3>Languages</h3>
+                            <span>
+                                <img src={icon}/>
+                                I speak Portuguese, English and Swedish. I’m also currently learning Italian and German, Amina’s mother tongues.
+                            </span>
+                        </div>
+                        <div className="quote">
+                            <h3>Residency Status</h3>
+                            <span>
+                                <img src={icon}/>
+                                I moved to Sweden in September 2011, after living and studying in Santa Barbara, California for 3 years.
+                            </span>
+                        </div>
+                        <div className="quote">
+                            <h3>Family Status</h3>
+                            <span>
+                                <img src={icon}/>
+                                I'm married to Amina and we have two girls, Zoe (3 years old) and Emma (1/2 year old).
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="btn-wrapper">
+                <Link className='btn' activeClass="active" to="mail" spy={true} smooth={true} offset={0}
+                      duration={500}>
+                    <span>Contact Me</span>
+                    <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.0572316 3.16667L1.94285 0.833334L7.00002 4.92015L12.0572 0.833335L13.9428 3.16667L7.00002 8.77729L0.0572316 3.16667Z"/>
+                    </svg>
+                </Link>
+            </div>
+            <div className="endsection-gradient"/>
+
+        </div>
+    )
 }
 export default About;

@@ -1,15 +1,50 @@
 :root {
 	--gradient: linear-gradient(to bottom right, #22CAFF, #3E7FFF);
-	--gradientBlue: linear-gradient(to bottom right, #22CAFF, #3E7FFF);
+	--gradientBlue: linear-gradient(to bottom right, #1DAEFF, #433FFF);
 	--gradientPink: linear-gradient(to bottom right, #FF6CC4, #FF4466);
 	--gradientPurple: linear-gradient(to bottom right, #9757FF, #713FFF);
+}
+
+.home {
+	background: #F9FBFF;
+	padding-top: 10rem;
 }
 
 .home-picture {
 	padding: 0 0 2rem 0;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+}
+
+.status {
+	background: white;
+	display: flex;
+	align-items: center;
+	border-radius: 40px;
+	padding: 10px 25px 10px 20px;
+	font-size: 1.4vw;
+	font-weight: 600;
+	position: absolute;
+	margin-top: 160px;
+	margin-left: 430px;
+	height: 44px;
+}
+
+.status img {
+	padding-right: 15px;
+}
+
+.status:first-of-type {
+	margin-top: 80px;
+	margin-left: 420px;
+}
+
+.status span {
+	font-weight: 400;
+	font-size: 1vw;
+	padding-top: 5px;
+	padding-left: 10px;
 }
 
 .border{
@@ -43,27 +78,43 @@
 }
 
 .home-wrapper h1 {
-	font-size: calc(2vw + 4rem);
+	font-size: calc(2vw + 5rem);
 	font-weight: 600;
 	height: auto;
 	margin-top: 2rem;
 }
 
-.Typewriter {
+.typewriter-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.home-wrapper h1 .typewriter {
 	font-size: calc(2vw + 1rem);
 	font-weight: 400;
 }
 
-.home-wrapper h1 .typewriter-cursor {
-	font-size: calc(2vw + 1rem);
-	font-weight: 300;
-	color: #5585FF;
+.typewriter-cursor {
+	animation: blink 1s step-end infinite;
+	-webkit-animation: blink 1s step-end infinite;
+	-z-animation: blink 1s step-end infinite;
+	-o-animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+	0%,100%{color: white;}
+	50%{color: #343E4E;}
+}
+
+@-webkit-keyframes blink {
+	0%,100%{color: white;}
+	50%{color: #343E4E;}
+}
+@-moz-keyframes blink {
+	0%,100%{color: white;}
+	50%{color: #343E4E;}
+}
+@-o-keyframes blink {
+	0%,100%{color: white;}
+	50%{color: #343E4E;}
 }
 
 .home-wrapper h1 .gradientText {

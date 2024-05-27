@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Projects.css";
 import {Link} from 'react-scroll';
-import arrow from "../images/arrow.svg";
 import {
     SiUnity,
     SiAdobephotoshop,
@@ -30,7 +29,7 @@ const handleMouseOut = e => {
 }
 const Projects = () => {
     return (
-        <div className="Projects">
+        <div className="projects">
             <h2>This is my portfolio.</h2>
             <div>
                 <div className="project">
@@ -253,8 +252,10 @@ const Projects = () => {
             <div className="btn-wrapper">
                 <Link className='btn' activeClass="active" to="skills" spy={true} smooth={true} offset={0}
                       duration={500}>
-                    View Software
-                    <img src={arrow} className='btn-arrow' alt="arrow"/>
+                    <span>View Skillset</span>
+                    <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0572316 3.16667L1.94285 0.833334L7.00002 4.92015L12.0572 0.833335L13.9428 3.16667L7.00002 8.77729L0.0572316 3.16667Z"/>
+                    </svg>
                 </Link>
             </div>
         </div>

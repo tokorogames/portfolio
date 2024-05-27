@@ -5,6 +5,23 @@
 	--blob-left: 238px;
 }
 
+.projects {
+	padding-top: 5rem;
+}
+
+.projects h2 {
+	background: var(--purple-gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+.projects > div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .project {
 	min-width: var(--project-width);
 	max-width: var(--project-width);
@@ -29,6 +46,7 @@
 	display: inline-block;
 	border: 5px solid white;
 	top: -40px;
+	border-radius: 40px;
 }
 
 .preview {
@@ -106,24 +124,6 @@
 	position: absolute;
 	top: 20px;
 	left: 230px;
-}
-
-.Projects {
-	display: flex;
-	flex-direction: column;
-}
-
-.Projects h2 {
-	background: var(--purple-gradient);
-	background-clip: text;
-	color: transparent;
-}
-
-.Projects > div {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .software {

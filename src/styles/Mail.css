@@ -1,60 +1,86 @@
 :root {
-	--input-width: 800px;
+	--input-width: 1000px;
+	--input-padding: 15px;
+}
+
+.mail {
+	padding-top: 5rem;
+	padding-bottom: 10rem;
 }
 
 .mail h2 {
-	background: var(--green-gradient);
+	background: var(--purple-gradient);
 	background-clip: text;
 	color: transparent;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-info div {
+	padding: 0 30px;
+}
+
+.contact-info img {
+	margin-right: -40px;
+	position: relative;
+	transform: rotate(-15deg);
+}
+
+.contact-info span {
+	background: #F9FBFF;
+	border-radius: 40px;
+	display: inline-block;
+	padding: 15px 50px 35px 60px;
+	font-weight: 600;
+	font-size: 1.7vw;
+}
+
+.contact-info p {
+	margin-bottom: -60px;
+	color: #945AFF;
+	font-size: 1vw;
 }
 
 .entry {
 	text-align: left;
 	margin: 0 auto;
-	width: var(--input-width);
+	width: calc(var(--input-width) - (var(--input-padding) * 2));
+}
+
+.entry label {
+	color: #945AFF;
+	font-weight: 600;
+	font-size: 1vw;
 }
 
 .entry input,
 .entry textarea {
-	background-color: #181721;
-	width: var(--input-width);
-	border: 1px solid #6253e8;
-	border-radius: 4px;
-	caret-color: #6253e8;
-	padding-left: 10px;
-	color: #f5f5f5;
-}
-
-.entry input,
-.entry textarea{
-  background-color: #f5f5f5;
-  color: #000;
-  transition: all 0.5s;
-}
-
-.entry input:active,
-.entry textarea:active,
-.entry input:focus,
-.entry textarea:focus {
-	outline: none;
-	background-color: #181721;
-}
-
-.entry input:active,
-.entry textarea:active,
-.entry input:focus,
-.entry textarea:focus {
-	outline: none;
-	background-color: #f5f5f5;
-}
-
-.entry input {
-	min-height: 40px;
-}
-
-.entry textarea {
-	padding-top: 10px;
+	background-color: #F9FBFF;
+	border: 2px solid #FFF;
+	border-radius: 10px;
+	caret-color: #A08ED3;
+	color: #3B5794;
+	transition: all 0.3s;
+	padding: var(--input-padding);
 	resize: none;
+	outline: none;
+	font-size: 1vw;
+	font-family: inherit;
+}
+
+.entry textarea::placeholder, .entry input::placeholder {
+	color: #A08ED3;
+}
+
+.entry input:active,
+.entry textarea:active,
+.entry input:focus,
+.entry textarea:focus {
+	border: 2px solid #945AFF;
+	color: #3B5794;
 }
 
 .entry > div:not(.mail-btn, .options) {
@@ -67,92 +93,17 @@
 	margin-bottom: 5px;
 }
 
-.options {
-	padding-top: 20px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: var(--input-width);
-}
-
-.options div {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	padding-top: 10px;
-}
-
-.options div label {
-	overflow: hidden;
-}
-
-[type='radio'] {
-	padding-top: 5px;
-}
-
-[type='radio']:checked,
-[type='radio']:not(:checked) {
-	position: absolute;
-	left: -9999px;
-}
-[type='radio']:checked + label,
-[type='radio']:not(:checked) + label {
-	position: relative;
-	padding-left: 28px;
-	cursor: pointer;
-	line-height: 20px;
-	display: inline-block;
-	color: #666;
-}
-[type='radio']:checked + label:before,
-[type='radio']:not(:checked) + label:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 18px;
-	height: 18px;
-	border: 1px solid #ddd;
-	border-radius: 100%;
-	background: transparent;
-}
-[type='radio']:checked + label:after,
-[type='radio']:not(:checked) + label:after {
-	content: '';
-	width: 12px;
-	height: 12px;
-	background: #6253e8;
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	border-radius: 100%;
-	-webkit-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-[type='radio']:not(:checked) + label:after {
-	opacity: 0;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-}
-[type='radio']:checked + label:after {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
 .mail-btn {
 	cursor: pointer;
-	background-color: #6253e8;
-	width: calc(calc(var(--input-width) / 2) + 20px);
-	min-height: 35px;
+	background-color: #945AFF;
+	padding: 10px 0;
 	display: grid;
 	place-items: center;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin-top: 10px;
-}
-
-.mail-btn{
 	color: #fff;
+	font-weight: 400;
+	font-size: 1.4vw;
 }
 
 @media only screen and (max-width: 600px) {

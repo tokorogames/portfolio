@@ -1,12 +1,14 @@
 :root {
 	--skill-color: #B3B2E3;
 	--container-width: 1200px;
-	--skill-size: calc(var(--container-width) / 7);
+	--skills-big-size: calc(var(--container-width) / 7);
+	--skills-small-size: calc(var(--container-width) / 10);
 }
 
 .skills {
 	display: flex;
 	flex-direction: column;
+	padding-top: 5rem;
 }
 
 .skills h2 {
@@ -15,7 +17,7 @@
 	color: transparent;
 }
 
-.skill {
+.skills-small, .skills-big {
 	width: var(--container-width);
 	margin: 0 auto;
 	display: flex;
@@ -23,31 +25,45 @@
 	justify-content: center;
 }
 
-.skill div {
-	margin-bottom: 20px;
-	min-height: var(--skill-size);
-	width: var(--skill-size);
+.skills-small div, .skills-big div {
+	min-height: var(--skills-big-size);
+	width: var(--skills-big-size);
 	display: grid;
+	padding: 5px;
 	place-items: center;
-	padding: 20px;
 }
 
-.skill p {
+.skills-small div {
+	min-height: var(--skills-small-size);
+	width: var(--skills-small-size);
+	padding: 0;
+}
+
+.skills-small p, .skills-big p {
 	color: var(--skill-color);
 	font-weight: 600;
-	font-size: 1vw;
-	margin-bottom: -2px;
+	font-size: 1.15vw;
+	margin-top: -5px;
 }
 
-.skill div svg {
-	min-height: calc(var(--skill-size) - 40px);
-	width: calc(var(--skill-size) - 40px);
+.skills-small p {
+	font-size: 0.8vw;
+}
+
+.skills-small div svg, .skills-big div svg {
+	min-height: calc(var(--skills-big-size) - 80px);
+	width: calc(var(--skills-big-size) - 80px);
 	color: var(--skill-color);
+	fill: var(--skill-color);
 	transition: all 390ms ease-in-out;
-	margin-bottom: -5px;
 }
 
-.skill div:hover {
+.skills-small div svg {
+	min-height: calc(var(--skills-big-size) - 110px);
+	width: calc(var(--skills-big-size) - 110px);
+}
+
+.skills-small div:hover, .skills-big div:hover {
 	--skill-color: #FF49A1;
 }
 
