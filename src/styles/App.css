@@ -5,6 +5,8 @@
 	--green-gradient: linear-gradient(to bottom right, #a9ff0e, #2fcd00);
 }
 
+
+
 .App > div:first-of-type {
 	border-top: none;
 }
@@ -35,7 +37,8 @@
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	margin-top: 180px;
+	margin-top: 10vw;
+	/*margin-top: 180px;*/
 	color: #3b5794;
 }
 
@@ -69,7 +72,7 @@
 }
 
 .endsection-gradient {
-	height: 122px;
+	height: 6vw;
 	background: rgb(145,128,255);
 	background: linear-gradient(180deg, rgba(145,128,255,0) 0%, rgba(145,128,255,0.02) 22%, rgba(145,128,255,0.06) 40%, rgba(145,128,255,0.2) 100%);
 }
@@ -116,9 +119,8 @@
 	transition: all 0.5s;
 }
 
-@media only screen and (max-width: 800px) {
-	.App > div {
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
+@media only screen and (max-width: 600px) {
+	.btn {
+		font-size: 1.15rem;
 	}
 }

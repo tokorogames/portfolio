@@ -1,18 +1,12 @@
-:root {
-	--padding-width: 10rem;
-}
-
 .header {
 	position: fixed;
-	left: 0;
-	top: 0;
-	padding-left: var(--padding-width);
-	padding-right: var(--padding-width);
-	width: calc(100vw - calc(var(--padding-width) * 2));
+	min-width: 100%;
+	justify-content: center;
+	padding: 0;
+	margin: 0 auto;
 	z-index: 101;
 	display: flex;
 	background-color: rgba(255, 255, 255, 0.97);
-	justify-content: space-evenly;
 }
 
 .header {
@@ -33,7 +27,7 @@
 
 .nav ul li, .nav ul li a{
 	list-style: none;
-	font-size: 0.85vw;
+	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	height: 100%;
@@ -55,4 +49,11 @@
 	margin: 0 20px;
 	color: #205EFF;
 	border-bottom: 2px solid #5584FF;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav ul li, .nav ul li a{
+		font-size: 0.9rem;
+		width: 100px;
+	}
 }
