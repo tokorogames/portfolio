@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5580a49a.css",
+    "main.js": "/static/js/main.34e8ba02.js",
+    "static/media/lab.mp4": "/static/media/lab.b28330c84077818b738c.mp4",
+    "static/media/iroll.mp4": "/static/media/iroll.72b8d8fcfa3990caeeb8.mp4",
+    "static/media/nostalgitrippen.mp4": "/static/media/nostalgitrippen.d11ec60776053d10f92b.mp4",
+    "static/media/intoorbit.mp4": "/static/media/intoorbit.acaa47bef458149f9b31.mp4",
+    "static/media/bangontime.mp4": "/static/media/bangontime.9056af827291535d0d4b.mp4",
+    "static/media/landscapes.mp4": "/static/media/landscapes.cc56632ce69a371afbe9.mp4",
+    "static/media/picture.png": "/static/media/picture.cf08a8d26de01c533084.png",
+    "static/media/intro-picture.png": "/static/media/intro-picture.126db1b73ca3ef66b551.png",
+    "static/media/whatsapp-icon.png": "/static/media/whatsapp-icon.fa5c2427dd9a991f8b16.png",
+    "index.html": "/index.html",
+    "static/media/project-thumb-mask-outline.svg": "/static/media/project-thumb-mask-outline.3b5665d07c1b6f2716f7.svg",
+    "static/media/project-thumb-mask.svg": "/static/media/project-thumb-mask.b89607eb10383f443dc6.svg",
+    "main.5580a49a.css.map": "/static/css/main.5580a49a.css.map",
+    "main.34e8ba02.js.map": "/static/js/main.34e8ba02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5580a49a.css",
+    "static/js/main.34e8ba02.js"
+  ]
+}
