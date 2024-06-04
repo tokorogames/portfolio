@@ -27,6 +27,7 @@ jobs:
       - name: Start SSH Agent and Add Key
         id: ssh-setup
         run: |
+          eval "$(ssh-agent -s)"
           echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
