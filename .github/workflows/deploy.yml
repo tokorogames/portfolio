@@ -1,4 +1,4 @@
-name: Deploy to Server
+name: CI/CD Pipeline
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,14 +21,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run tests
+        run: npm test
+
       - name: Build project
-        run: CI=false npm run build
+        run: npm run build
 
       - name: Start SSH Agent and Add Key
         id: ssh-setup
         run: |
           eval "$(ssh-agent -s)"
           echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+          ssh-add -l  # List the loaded keys for debugging
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
