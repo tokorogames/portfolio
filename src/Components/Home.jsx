@@ -12,7 +12,6 @@ const Home = () => {
             <div className="home-wrapper">
                 <div className="home-picture">
                     {/*<img src={picture} className="border" alt="miguel"/>*/}
-                    Test
                     <div className="status-wrapper">
                         <div className="status">
                             <img src={locationIcon}/> Stockholm, SE
