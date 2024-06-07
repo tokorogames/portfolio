@@ -50,7 +50,7 @@ const About = () => {
                             <h3>Languages</h3>
                             <span>
                                 <img src={icon}/>
-                                I speak Portuguese, English and Swedish. I’m also currently learning Italian and German, Amina’s mother tongues.
+                                I speak Portuguese, English and Swedish. I’m also currently learning Italian and German, my wife’s mother tongues.
                             </span>
                         </div>
                         <div className="quote">
