@@ -26,10 +26,10 @@ jobs:
 
       - name: Install SSH Key
         run: /
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          echo "$SSH_FINGERPRINT" >> ~/.ssh/known_hosts
-          chmod 600 ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan 68.65.121.178 >> ~/.ssh/known_hosts
         shell: bash
         env:
           SSH_FINGERPRINT: ${{secrets.SSH_FINGERPRINT}}
