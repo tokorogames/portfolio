@@ -25,15 +25,15 @@ jobs:
         run: CI=false npm run build
 
       - name: Install SSH Key
-          run: /
-            install -m 600 -D /dev/null ~/.ssh/id_rsa
-            echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-            echo "$SSH_FINGERPRINT" >> ~/.ssh/known_hosts
-            chmod 600 ~/.ssh/known_hosts
-          shell: bash
-          env:
-            SSH_FINGERPRINT: ${{secrets.SSH_FINGERPRINT}}
-            SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+        run: /
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          echo "$SSH_FINGERPRINT" >> ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+        shell: bash
+        env:
+          SSH_FINGERPRINT: ${{secrets.SSH_FINGERPRINT}}
+          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
       - uses: actions/download-artifact@v2
         with:
           name: assets
