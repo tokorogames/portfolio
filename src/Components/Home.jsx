@@ -18,6 +18,7 @@ const Home = () => {
                         </div>
                         <div className="status">
                             <img src={jobIcon}/> Tokoro <span>(Self-employed)</span>
+                            test
                         </div>
                     </div>
                 </div>
