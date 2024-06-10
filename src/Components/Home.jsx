@@ -11,14 +11,13 @@ const Home = () => {
         <div className='home'>
             <div className="home-wrapper">
                 <div className="home-picture">
-                    {/*<img src={picture} className="border" alt="miguel"/>*/}
+                    <img src={picture} className="border" alt="miguel"/>
                     <div className="status-wrapper">
                         <div className="status">
                             <img src={locationIcon}/> Stockholm, SE
                         </div>
                         <div className="status">
                             <img src={jobIcon}/> Tokoro <span>(Self-employed)</span>
-                            test
                         </div>
                     </div>
                 </div>
