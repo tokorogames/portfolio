@@ -11,7 +11,10 @@
 
 .projects h2 {
 	background: var(--purple-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	text-fill-color: transparent;
 	color: transparent;
 }
 
@@ -34,6 +37,7 @@
 
 .project h3 {
 	font-size: 1.8vw;
+	font-size: calc(1vw + 1rem);
 	font-weight: 600;
 	color: white;
 	background: linear-gradient(to right, #9757FF, #aa60ff) border-box;
@@ -50,29 +54,28 @@
 }
 
 .preview {
-	width: 324px;
-	height: 324px;
 	display: grid;
 }
 
 .preview-background {
 	background: linear-gradient(to bottom right, #54b4ff, #9757FF) border-box;
-	-webkit-mask-image: url('../images/project-thumb-mask-outline.svg');
 	mask-image: url('../images/project-thumb-mask-outline.svg');
-	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-position: center;
 	mask-position: center;
-	-webkit-mask-size: 100%;
 	mask-size: 100%;
+	-webkit-mask-image: url('../images/project-thumb-mask-outline.svg');
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 100%;
 	grid-area: 1 / 1;
 }
 
 .preview-overlay {
 	width: 100%;
 	height: 100%;
+	display: grid;
 	align-content: center;
-	padding-top: 5px;
+	justify-content: center;
 	background: rgba(255, 255, 255, 0.75);
 }
 
@@ -80,22 +83,22 @@
 	width: 298px;
 	height: 298px;
 	margin: 13px;
-	-webkit-mask-image: url('../images/project-thumb-mask.svg');
 	mask-image: url('../images/project-thumb-mask.svg');
-	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-position: center;
 	mask-position: center;
-	-webkit-mask-size: 100%;
 	mask-size: 100%;
+	-webkit-mask-image: url('../images/project-thumb-mask.svg');
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 100%;
 	grid-area: 1 / 1;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
 
 .video_holder_video {
 	position: relative;
-	left: -120px;
-	top: -7px;
-	width: 540px;
 	/*rotate: -14.3deg;*/
 }
 
@@ -108,6 +111,11 @@
 	margin-top: -1rem;
 	margin-bottom: 2rem;
 	color: #7285A1;
+}
+
+.project > p a {
+	font-weight: 600;
+	color: #9757FF;
 }
 
 .preview h3 {
@@ -152,17 +160,24 @@
 .software p {
 	color: var(--project-color);
 	font-weight: 600;
-	font-size: 0.75vw;
+	font-size: calc(0.3vw + 0.5rem);
 	margin-top: 10px;
 }
 
 @media screen and (max-width: 430px) {
-	:root {
-		--project-width: 200px;
-		--blob-left: 200px;
-	}
-
 	.project {
 		margin: 0 0 2rem 0;
+	}
+	
+	.project h3 {
+		font-size: calc(1vw + 2rem);
+	}
+	
+	.preview h3 {
+		display: none;
+	}
+
+	.software div {
+		width: 60px;
 	}
 }

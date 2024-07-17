@@ -1,8 +1,6 @@
 :root {
 	--skill-color: #B3B2E3;
 	--container-width: 1200px;
-	--skills-big-size: calc(var(--container-width) / 7);
-	--skills-small-size: calc(var(--container-width) / 10);
 }
 
 .skills {
@@ -13,12 +11,15 @@
 
 .skills h2 {
 	background: var(--pink-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	text-fill-color: transparent;
 	color: transparent;
 }
 
 .skills-small, .skills-big {
-	width: var(--container-width);
+	max-width: var(--container-width);
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -26,41 +27,45 @@
 }
 
 .skills-small div, .skills-big div {
-	min-height: var(--skills-big-size);
-	width: var(--skills-big-size);
 	display: grid;
-	padding: 5px;
 	place-items: center;
 }
 
+.skills-big div {
+	min-height: 180px;
+	width: 180px;
+}
+
 .skills-small div {
-	min-height: var(--skills-small-size);
-	width: var(--skills-small-size);
-	padding: 0;
+	min-height: 140px;
+	width: 140px;
 }
 
 .skills-small p, .skills-big p {
 	color: var(--skill-color);
 	font-weight: 600;
-	font-size: 1.15vw;
+	font-size: calc(0.3vw + 0.7rem);
 	margin-top: -5px;
 }
 
 .skills-small p {
-	font-size: 0.8vw;
+	margin-top: -15px;
 }
 
 .skills-small div svg, .skills-big div svg {
-	min-height: calc(var(--skills-big-size) - 80px);
-	width: calc(var(--skills-big-size) - 80px);
 	color: var(--skill-color);
 	fill: var(--skill-color);
 	transition: all 390ms ease-in-out;
 }
 
+.skills-big div svg {
+	min-height: 100px;
+	width: 100px;
+}
+
 .skills-small div svg {
-	min-height: calc(var(--skills-big-size) - 110px);
-	width: calc(var(--skills-big-size) - 110px);
+	min-height: 60px;
+	width: 60px;
 }
 
 .skills-small div:hover, .skills-big div:hover {
@@ -70,6 +75,30 @@
 @media only screen and (max-width: 600px) {
 	:root {
 		--container-width: 500px;
+	}
+
+	.skills-big div {
+		min-height: 90px;
+		width: 90px;
+	}
+
+	.skills-big div svg {
+		min-height: 50px;
+		width: 50px;
+	}
+
+	.skills-small div {
+		min-height: 70px;
+		width: 70px;
+	}
+
+	.skills-small div svg {
+		min-height: 35px;
+		width: 35px;
+	}
+
+	.skills-small p {
+		margin-top: 5px;
 	}
 }
 @media only screen and (max-width: 500px) {

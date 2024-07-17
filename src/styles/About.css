@@ -1,6 +1,7 @@
 .about-wrapper {
+	padding: 0 30px;
 	padding-bottom: 50px;
-	width: var(--container-width);
+	max-width: var(--container-width);
 	margin: 0 auto;
 }
 
@@ -11,19 +12,24 @@
 
 .about h2 {
 	background: var(--gradientBlue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	text-fill-color: transparent;
 	color: transparent;
 }
 
 .profile {
 	display: flex;
+	flex-direction: row;
 }
 
 .picture {
 	display: flex;
 	flex-direction: column;
 	color: #8b8ad2;
-	font-size: 1vw;
+	font-size: calc(0.3vw + 0.7rem);
+	padding-bottom: 40px;
 }
 
 .picture .info-outline {
@@ -43,9 +49,12 @@
 }
 .picture .info span {
 	background: var(--gradientBlue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	text-fill-color: transparent;
 	color: transparent;
-	font-size: 1.25vw;
+	font-size: calc(0.3vw + 1rem);
 	font-weight: 600;
 }
 
@@ -53,7 +62,7 @@
 	margin: 0;
 	padding-bottom: 10px;
 	margin-left: -20px;
-	font-size: 1.05vw;
+	font-size: calc(0.2vw + 1rem);
 	font-weight: 600;
 	color: #316BFF;
 	text-align: left;
@@ -75,7 +84,7 @@
 	display: flex;
 	align-items: center;
 	text-align: left;
-	font-size: 1vw;
+	font-size: calc(0.3vw + 0.7rem);
 	background: white;
 	border-radius: 40px;
 	padding: 10px 30px;
@@ -85,4 +94,52 @@
 	margin-bottom: -6px;
 	padding-right: 15px;
 	margin-left: -58px;
+}
+
+@media only screen and (max-width: 900px) {
+	.profile {
+		flex-direction: column;
+	}
+	
+	.picture-container {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.picture-container img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.profile {
+		flex-direction: column;
+	}
+	
+	.picture-container {
+		box-sizing: border-box;
+		padding: 0 40px;
+		width: 100%;
+	}
+	
+	.picture-container img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.quotes {
+		margin: 0 30px;
+	}
+	
+	.profile h3 {
+		text-align: center;
+	}
+
+	.quote span img {
+		width: 40px;
+		margin-left: -50px;
+	}
 }

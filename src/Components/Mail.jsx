@@ -104,31 +104,31 @@ const Mail = () => {
                     </span>
                 </div>
             </div>
-            <h2><span>Or send me a message here:</span></h2>
-            <div>
-                <div className='entry'>
-                    <div>
-                        <label htmlFor="name">Name</label>
-                        <input placeholder="Write your name here." type="text" name="name" autoComplete='off'
-                               value={toSend.name} onChange={handleChange}/>
-                    </div>
-                    <div>
-                        <label htmlFor="email">Email</label>
-                        <input placeholder="Write your email here." type="email" name="email" autoComplete='off'
-                               value={toSend.email}
-                               onChange={handleChange}/>
-                    </div>
-                    <div>
-                        <label htmlFor="message">Message</label>
-                        <textarea placeholder="Write your message here." name="message" cols="30" rows="10"
-                                  value={toSend.message}
-                                  onChange={handleChange}/>
-                    </div>
-                    <p style={{color: 'red !important', display: 'none'}} ref={error}>Something is missing</p>
-                    <p style={{color: 'red !important'}} ref={formResMsg}></p>
-                    <div className='mail-btn' onClick={handleClick}>Send message</div>
-                </div>
-            </div>
+            {/*<h2><span>Or send me a message here:</span></h2>*/}
+            {/*<div>*/}
+            {/*    <div className='entry'>*/}
+            {/*        <div>*/}
+            {/*            <label htmlFor="name">Name</label>*/}
+            {/*            <input placeholder="Write your name here." type="text" name="name" autoComplete='off'*/}
+            {/*                   value={toSend.name} onChange={handleChange}/>*/}
+            {/*        </div>*/}
+            {/*        <div>*/}
+            {/*            <label htmlFor="email">Email</label>*/}
+            {/*            <input placeholder="Write your email here." type="email" name="email" autoComplete='off'*/}
+            {/*                   value={toSend.email}*/}
+            {/*                   onChange={handleChange}/>*/}
+            {/*        </div>*/}
+            {/*        <div>*/}
+            {/*            <label htmlFor="message">Message</label>*/}
+            {/*            <textarea placeholder="Write your message here." name="message" cols="30" rows="10"*/}
+            {/*                      value={toSend.message}*/}
+            {/*                      onChange={handleChange}/>*/}
+            {/*        </div>*/}
+            {/*        <p style={{color: 'red !important', display: 'none'}} ref={error}>Something is missing</p>*/}
+            {/*        <p style={{color: 'red !important'}} ref={formResMsg}></p>*/}
+            {/*        <div className='mail-btn' onClick={handleClick}>Send message</div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             <div className="outro">
                 <h2>This is the end.</h2>
                 <h3>(But maybe the beginning of something else.)</h3>

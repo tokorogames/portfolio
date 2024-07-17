@@ -98,7 +98,10 @@
 
 .home-wrapper h1 .gradientText {
 	background: var(--gradientBlue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	text-fill-color: transparent;
 	color: transparent;
 }
 
@@ -141,5 +144,9 @@
 
 	.typewriter-wrapper {
 		font-size: calc(1vw + 1.6rem);
+	}
+	
+	.status-wrapper {
+		display: none;
 	}
 }

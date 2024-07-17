@@ -71,6 +71,7 @@ const Projects = () => {
                         <h3>Tokoro</h3>
                         <div className="preview-background"/>
                         <div className="video_holder">
+                            <a href="#">
                             <HoverVideoPlayer
                                 className="video_holder_video"
                                 videoSrc={iRoll}
@@ -81,9 +82,12 @@ const Projects = () => {
                                     </div>
                                 }
                             />
+                            </a>
                         </div>
                     </div>
-                    <h3>iRoll</h3>
+                    <Link href="#">
+                        <h3><a>iRoll</a></h3>
+                    </Link>
                     <p>Get to the goal by avoiding obstacles. Find the quickest route and beat your own record!</p>
                     <div className="software">
                         <div>

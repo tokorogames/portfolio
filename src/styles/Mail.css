@@ -9,7 +9,10 @@
 
 .mail h2 {
 	background: var(--purple-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	text-fill-color: transparent;
 	color: transparent;
 }
 
@@ -26,14 +29,17 @@
 
 .outro h2 {
 	background: var(--gradientBlue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	text-fill-color: transparent;
 	color: transparent;
 	margin-bottom: 0;
 }
 
 .outro h3 {
 	color: #3b5794;
-	font-size: 1.1vw;
+	font-size: calc(0.3vw + 0.8rem);
 	font-weight: 400;
 	margin: 0;
 }
@@ -45,6 +51,7 @@
 .contact-info {
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 }
 
 .contact-info div {
@@ -63,13 +70,13 @@
 	display: inline-block;
 	padding: 15px 50px 35px 60px;
 	font-weight: 600;
-	font-size: 1.7vw;
+	font-size: calc(0.6vw + 1.1rem);
 }
 
 .contact-info p {
 	margin-bottom: -60px;
 	color: #945AFF;
-	font-size: 1vw;
+	font-size: calc(0.3vw + 0.7rem);
 }
 
 .entry {
@@ -135,19 +142,26 @@
 }
 
 @media only screen and (max-width: 600px) {
-	:root {
-		--input-width: 97%;
+	.contact-info {
+		flex-direction: column;
 	}
-}
 
-@media only screen and (max-width: 531px) {
-	:root {
-		--input-width: 95%;
+	.contact-info img {
+		margin-right: -10px;
+		margin-bottom: 10px;
+		width: 50px;
 	}
-}
 
-@media only screen and (max-width: 350px) {
-	:root {
-		--input-width: 94%;
+	.contact-info span {
+		background: #F9FBFF;
+		border-radius: 40px;
+		display: inline-block;
+		padding: 10px 20px 35px 25px;
+		font-weight: 600;
+		font-size: calc(0.6vw + 1.1rem);
+	}
+
+	.contact-info div {
+		padding-bottom: 30px;
 	}
 }
