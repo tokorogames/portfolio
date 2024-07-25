@@ -111,6 +111,7 @@
 	margin-top: -1rem;
 	margin-bottom: 2rem;
 	color: #7285A1;
+	font-size: calc(0.2vw + 0.8rem) ;
 }
 
 .project > p a {
@@ -162,6 +163,21 @@
 	font-weight: 600;
 	font-size: calc(0.3vw + 0.5rem);
 	margin-top: 10px;
+}
+
+.ui.button {
+	font-family: 'Blinker', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+	font-weight: 400 !important;
+	/*text-transform: uppercase !important;*/
+	font-size: calc(0.3vw + 0.7rem) !important;
+	color: white !important;
+	background: linear-gradient(to right, #745bff, #6068ff) border-box !important;
+	padding: 8px 15px 8px 20px !important;
+	margin-bottom: 30px !important;
+}
+
+.ui.button > .icon:not(.button) {
+	opacity: 1 !important;
 }
 
 @media screen and (max-width: 430px) {

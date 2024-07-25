@@ -13,13 +13,22 @@ import {
 } from 'react-icons/si'
 import imageIcon from "../images/image-icon.png";
 import videoIcon from "../images/video-icon.png";
-import iRoll from "../images/i-roll.mp4";
-import LAB from "../images/lab.mp4";
-import BoT from "../images/bangontime.mp4";
-import Nostalgitrippen from "../images/nostalgitrippen.mp4";
-import IntoOrbit from "../images/intoorbit.mp4";
-import Landscapes from "../images/landscapes.mp4";
+import iRollPreview from "../images/i-roll.mp4";
+import LABPreview from "../images/lab.mp4";
+import BoTPreview from "../images/bangontime.mp4";
+import NostalgitrippenPreview from "../images/nostalgitrippen.mp4";
+import IntoOrbitPreview from "../images/intoorbit.mp4";
+import LandscapesPreview from "../images/landscapes.mp4";
 import HoverVideoPlayer from 'react-hover-video-player';
+
+import BoT from './BoT';
+import IRoll from './IRoll';
+import Nostalgitrippen from './Nostalgitrippen';
+
+const styleLink = document.createElement("link");
+styleLink.rel = "stylesheet";
+styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
+document.head.appendChild(styleLink);
 
 const handleMouseEnter = e => {
     e.currentTarget.play();
@@ -39,7 +48,7 @@ const Projects = () => {
                         <div className="video_holder">
                             <HoverVideoPlayer
                                 className="video_holder_video"
-                                videoSrc={BoT}
+                                videoSrc={BoTPreview}
                                 overlayTransitionDuration={250}
                                 pausedOverlay={
                                     <div className="preview-overlay">
@@ -51,6 +60,7 @@ const Projects = () => {
                     </div>
                     <h3>Bang On Time</h3>
                     <p>Place your cards in the correct order, in this fast-paced, competitive mobile game.</p>
+                    <BoT/>
                     <div className="software">
                         <div>
                             <SiUnity/>
@@ -74,7 +84,7 @@ const Projects = () => {
                             <a href="#">
                             <HoverVideoPlayer
                                 className="video_holder_video"
-                                videoSrc={iRoll}
+                                videoSrc={iRollPreview}
                                 overlayTransitionDuration={250}
                                 pausedOverlay={
                                     <div className="preview-overlay">
@@ -89,6 +99,7 @@ const Projects = () => {
                         <h3><a>iRoll</a></h3>
                     </Link>
                     <p>Get to the goal by avoiding obstacles. Find the quickest route and beat your own record!</p>
+                    <IRoll/>
                     <div className="software">
                         <div>
                             <SiUnity/>
@@ -119,7 +130,7 @@ const Projects = () => {
                         <div className="video_holder">
                             <HoverVideoPlayer
                                 className="video_holder_video"
-                                videoSrc={Nostalgitrippen}
+                                videoSrc={NostalgitrippenPreview}
                                 overlayTransitionDuration={250}
                                 pausedOverlay={
                                     <div className="preview-overlay">
@@ -132,6 +143,7 @@ const Projects = () => {
                     <h3>Nostalgitrippen</h3>
                     <p>Ett ordspel och bokstavspussel för dig som älskar nostalgi! Med inslag av lite quiz och
                         trivia.</p>
+                    <Nostalgitrippen/>
                     <div className="software">
                         <div>
                             <SiFigma/>
@@ -143,48 +155,48 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="project">
-                    <div className="preview">
-                        <h3>Tokoro</h3>
-                        <div className="preview-background"/>
-                        <div className="video_holder">
-                            <HoverVideoPlayer
-                                className="video_holder_video"
-                                videoSrc={LAB}
-                                overlayTransitionDuration={250}
-                                pausedOverlay={
-                                    <div className="preview-overlay">
-                                        <img src={videoIcon}/>
-                                    </div>
-                                }
-                            />
-                        </div>
-                    </div>
-                    <h3>LAB</h3>
-                    <p>Guide the ball home by strategically placing objects. Win, collect and craft cards!</p>
-                    <div className="software">
-                        <div>
-                            <SiUnity/>
-                            <p>Unity</p>
-                        </div>
-                        <div>
-                            <SiBlender/>
-                            <p>Blender</p>
-                        </div>
-                        <div>
-                            <SiAdobephotoshop/>
-                            <p>Photoshop</p>
-                        </div>
-                        <div>
-                            <SiAdobeillustrator/>
-                            <p>Illustrator</p>
-                        </div>
-                        <div>
-                            <SiAbletonlive/>
-                            <p>Live</p>
-                        </div>
-                    </div>
-                </div>
+                {/*<div className="project">*/}
+                {/*    <div className="preview">*/}
+                {/*        <h3>Tokoro</h3>*/}
+                {/*        <div className="preview-background"/>*/}
+                {/*        <div className="video_holder">*/}
+                {/*            <HoverVideoPlayer*/}
+                {/*                className="video_holder_video"*/}
+                {/*                videoSrc={LABPreview}*/}
+                {/*                overlayTransitionDuration={250}*/}
+                {/*                pausedOverlay={*/}
+                {/*                    <div className="preview-overlay">*/}
+                {/*                        <img src={videoIcon}/>*/}
+                {/*                    </div>*/}
+                {/*                }*/}
+                {/*            />*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*    <h3>LAB</h3>*/}
+                {/*    <p>Guide the ball home by strategically placing objects. Win, collect and craft cards!</p>*/}
+                {/*    <div className="software">*/}
+                {/*        <div>*/}
+                {/*            <SiUnity/>*/}
+                {/*            <p>Unity</p>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <SiBlender/>*/}
+                {/*            <p>Blender</p>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <SiAdobephotoshop/>*/}
+                {/*            <p>Photoshop</p>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <SiAdobeillustrator/>*/}
+                {/*            <p>Illustrator</p>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <SiAbletonlive/>*/}
+                {/*            <p>Live</p>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className="project">
                     <div className="preview">
                         <h3>Collab</h3>
@@ -192,7 +204,7 @@ const Projects = () => {
                         <div className="video_holder">
                             <HoverVideoPlayer
                                 className="video_holder_video"
-                                videoSrc={IntoOrbit}
+                                videoSrc={IntoOrbitPreview}
                                 overlayTransitionDuration={250}
                                 pausedOverlay={
                                     <div className="preview-overlay">
@@ -230,7 +242,7 @@ const Projects = () => {
                         <div className="video_holder">
                             <HoverVideoPlayer
                                 className="video_holder_video"
-                                videoSrc={Landscapes}
+                                videoSrc={LandscapesPreview}
                                 overlayTransitionDuration={500}
                                 pausedOverlay={
                                     <div className="preview-overlay">

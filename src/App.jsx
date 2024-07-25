@@ -11,9 +11,6 @@ import About from './Components/About';
 import Skills from './Components/Skills';
 import Mail from './Components/Mail';
 
-// icon
-import {CgArrowLongUp} from 'react-icons/cg';
-
 function App() {
     return (
         <div className='App'>
