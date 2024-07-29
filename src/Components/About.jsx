@@ -20,9 +20,6 @@ const About = () => {
                                 <span>Portugal, 2023</span>
                             </div>    
                         </div>
-                        <br/>
-                        Amina, Zoe and Miguel.<br/>
-                        Three months before Emma was born.
                     </div>
                     <div className="quotes">
                         <div className="quote">
@@ -40,13 +37,6 @@ const About = () => {
                             </span>
                         </div>
                         <div className="quote">
-                            <h3>Career Interests</h3>
-                            <span>
-                                <img src={icon}/>
-                                I’m currently very invested in shaders. I love working with Unity’s Shader Graph.
-                            </span>
-                        </div>
-                        <div className="quote">
                             <h3>Languages</h3>
                             <span>
                                 <img src={icon}/>
@@ -54,17 +44,10 @@ const About = () => {
                             </span>
                         </div>
                         <div className="quote">
-                            <h3>Residency Status</h3>
+                            <h3>Other</h3>
                             <span>
                                 <img src={icon}/>
-                                I moved to Sweden in September 2011, after living and studying in Santa Barbara, California for 3 years.
-                            </span>
-                        </div>
-                        <div className="quote">
-                            <h3>Family Status</h3>
-                            <span>
-                                <img src={icon}/>
-                                I'm married to Amina and we have two girls, Zoe (3 years old) and Emma (1/2 year old).
+                                I'm married to Amina and we have two girls, Zoe (3 years old) and Emma (1 year old). We live in Stockholm, Sweden.
                             </span>
                         </div>
                     </div>

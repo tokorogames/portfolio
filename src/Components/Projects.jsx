@@ -11,6 +11,7 @@ import {
     SiAbletonlive,
     SiBlender,
 } from 'react-icons/si'
+
 import imageIcon from "../images/image-icon.png";
 import videoIcon from "../images/video-icon.png";
 import iRollPreview from "../images/i-roll.mp4";
@@ -24,6 +25,8 @@ import HoverVideoPlayer from 'react-hover-video-player';
 import BoT from './BoT';
 import IRoll from './IRoll';
 import Nostalgitrippen from './Nostalgitrippen';
+import IntoOrbit from './IntoOrbit';
+import Landscapes from './Landscapes';
 
 const styleLink = document.createElement("link");
 styleLink.rel = "stylesheet";
@@ -155,48 +158,6 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                {/*<div className="project">*/}
-                {/*    <div className="preview">*/}
-                {/*        <h3>Tokoro</h3>*/}
-                {/*        <div className="preview-background"/>*/}
-                {/*        <div className="video_holder">*/}
-                {/*            <HoverVideoPlayer*/}
-                {/*                className="video_holder_video"*/}
-                {/*                videoSrc={LABPreview}*/}
-                {/*                overlayTransitionDuration={250}*/}
-                {/*                pausedOverlay={*/}
-                {/*                    <div className="preview-overlay">*/}
-                {/*                        <img src={videoIcon}/>*/}
-                {/*                    </div>*/}
-                {/*                }*/}
-                {/*            />*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*    <h3>LAB</h3>*/}
-                {/*    <p>Guide the ball home by strategically placing objects. Win, collect and craft cards!</p>*/}
-                {/*    <div className="software">*/}
-                {/*        <div>*/}
-                {/*            <SiUnity/>*/}
-                {/*            <p>Unity</p>*/}
-                {/*        </div>*/}
-                {/*        <div>*/}
-                {/*            <SiBlender/>*/}
-                {/*            <p>Blender</p>*/}
-                {/*        </div>*/}
-                {/*        <div>*/}
-                {/*            <SiAdobephotoshop/>*/}
-                {/*            <p>Photoshop</p>*/}
-                {/*        </div>*/}
-                {/*        <div>*/}
-                {/*            <SiAdobeillustrator/>*/}
-                {/*            <p>Illustrator</p>*/}
-                {/*        </div>*/}
-                {/*        <div>*/}
-                {/*            <SiAbletonlive/>*/}
-                {/*            <p>Live</p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <div className="project">
                     <div className="preview">
                         <h3>Collab</h3>
@@ -216,6 +177,7 @@ const Projects = () => {
                     </div>
                     <h3>Into Orbit</h3>
                     <p>Carefully launch your rocket ship into the orbit of a nearby planet. How far can you go?</p>
+                    <IntoOrbit/>
                     <div className="software">
                         <div>
                             <SiUnity/>
@@ -254,6 +216,7 @@ const Projects = () => {
                     </div>
                     <h3>Landscapes</h3>
                     <p>A collection of landscape concept art pieces for game environments.</p>
+                    <Landscapes/>
                     <div className="software">
                         <div>
                             <svg viewBox="0 0 128 124" xmlns="http://www.w3.org/2000/svg">
@@ -265,6 +228,16 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            <h2><span>Some older projects here:</span></h2>
+            <p className='project-text'>
+                <Link className='project-link' href='#'>LAB <span>(Game)</span></Link>
+                ┃
+                <Link className='project-link' href='#'>Stack the Fridge <span>(Game)</span></Link>
+                ┃
+                <Link className='project-link' href='#'>Quizkampen <span>(Game)</span></Link>
+                ┃
+                <Link className='project-link' href='#'>UI Collection <span>(Mockups)</span></Link>
+            </p>
             <div className="btn-wrapper">
                 <Link className='btn' activeClass="active" to="skills" spy={true} smooth={true} offset={0}
                       duration={500}>

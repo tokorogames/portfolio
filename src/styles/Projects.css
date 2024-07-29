@@ -23,6 +23,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 0px 100px
 }
 
 .project {
@@ -123,7 +124,9 @@
 	font-size: 0.85vw;
 	font-weight: 400;
 	color: white;
-	background: linear-gradient(to right, #9757FF, #aa60ff) border-box;
+	background: linear-gradient(to right, #745bff, #6068ff) border-box !important;
+
+	/*background: linear-gradient(to right, #9757FF, #aa60ff) border-box;*/
 	padding: 5px 20px;
 	z-index: 200;
 	text-align: left;
@@ -178,6 +181,26 @@
 
 .ui.button > .icon:not(.button) {
 	opacity: 1 !important;
+}
+
+.project-text {
+	font-size: calc(0.4vw + 1rem) !important;
+	font-weight: 300 !important;
+	color: #486ab0;
+	margin: -15px 0;
+}
+
+.project-text span {
+	font-size: calc(0.4vw + 0.8rem) !important;
+	font-weight: 400 !important;
+	color: #486ab0;
+}
+
+.project-link {
+	color: #237cff !important;
+	font-weight: 600 !important;
+	padding: 0px 20px;
+	/*text-transform: uppercase !important;*/
 }
 
 @media screen and (max-width: 430px) {
